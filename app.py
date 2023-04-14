@@ -1,58 +1,56 @@
 import streamlit as st
 
+def main():
+    st.text("Ciao questo fron frtrtrettretertretunziona")
+    # # ###################################################
+    # markdown
+    st.markdown('Streamlit is **_really_ cool**.')
+    st.markdown("This text is :red[colored red], and this is **:blue[colored]** and bold.")
+    st.markdown(":green[$\sqrt{x^3+y^2}=1$] is a Pythagorean identity. :pencil:")
 
-st.text("Ciao questo fron frtrtrettretertretunziona")
+    # ###################################################
+    # #title
+    st.title('This is a title')
+    st.title('A title with _italics_ :blue[colors] and emojis :sunglasses:')
+
+    # ###################################################
+    #header
+    st.header('This is a header')
+    st.header('A header with _italics_ :blue[colors] and emojis :sunglasses:')
+
+    # ###################################################
+    #subheader
+    st.subheader('This is a subheader')
+    st.subheader('A subheader with _italics_ :blue[colors] and emojis :sunglasses:')
+
+    # ###################################################
+    #caption
+    st.caption('This is a string that explains something above.')
+    st.caption('A caption with _italics_ :blue[colors] and emojis :sunglasses:')
+
+    # ###################################################
+    #code
+    code = '''def hello():
+        print("Hello, Streamlit!")'''
+    st.code(code, language='python')
+
+    # ###################################################
+    #latex
+    st.latex(r'''
+        a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+        \sum_{k=0}^{n-1} ar^k =
+        a \left(\frac{1-r^{n}}{1-r}\right)
+        ''')
+
+    #######################################################
+
+    st.title('La mia prima App in python')
+
+if __name__ == "__main__":
+    main()
 
 
-
-
-
-
-
-
-# # ###################################################
-# markdown
-st.markdown('Streamlit is **_really_ cool**.')
-st.markdown("This text is :red[colored red], and this is **:blue[colored]** and bold.")
-st.markdown(":green[$\sqrt{x^3+y^2}=1$] is a Pythagorean identity. :pencil:")
-
-# ###################################################
-# #title
-st.title('This is a title')
-st.title('A title with _italics_ :blue[colors] and emojis :sunglasses:')
-
-# ###################################################
-#header
-st.header('This is a header')
-st.header('A header with _italics_ :blue[colors] and emojis :sunglasses:')
-
-# ###################################################
-#subheader
-st.subheader('This is a subheader')
-st.subheader('A subheader with _italics_ :blue[colors] and emojis :sunglasses:')
-
-# ###################################################
-#caption
-st.caption('This is a string that explains something above.')
-st.caption('A caption with _italics_ :blue[colors] and emojis :sunglasses:')
-
-# ###################################################
-#code
-code = '''def hello():
-    print("Hello, Streamlit!")'''
-st.code(code, language='python')
-
-# ###################################################
-#latex
-st.latex(r'''
-    a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
-    \sum_{k=0}^{n-1} ar^k =
-    a \left(\frac{1-r^{n}}{1-r}\right)
-    ''')
-
-#######################################################
-
-st.title('La mia prima App in python')
+    
 
 # # #####################################################
 # ### the one
